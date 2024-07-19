@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+    <div class="video-background">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="summer.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="weather-container">
+        <input type="text" id="stateInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Search</button>
+        <div id="weatherInfo">
+            <img id="weatherIcon" src="404.png" alt="Weather Icon">
+            <h2 id="temperature">--°C</h2>
+            <p id="condition">--</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="windSpeed">Wind Speed: -- Km/H</p>
+        </div>
+    </div>
+    <div class="watermark">
+        Sayan
+ </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

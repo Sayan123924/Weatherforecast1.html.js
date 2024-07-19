@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.weather-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Increased transparency */
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#stateInput {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#weatherInfo {
+    margin-top: 20px;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+/* .watermark {
+    opacity: 8.5;
+    color: BLACK;
+    position: absolute;
+    bottom:0 ;
+    right: 0;
+} */
+.watermark {
+    opacity: 0.85;
+    color: rgb(254, 250, 250);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    padding: 10px;
+    text-shadow: 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF, 0 0 20px #00FFFF, 0 0 25px #00FFFF, 0 0 30px #00FFFF;
+}
